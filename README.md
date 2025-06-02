@@ -1,5 +1,7 @@
 # TutorialUeberauth
 
+https://qiita.com/B_tanuki/items/acb412049506f3182a4d
+
 # ブランチ
 
 * part/1: 依存の追加
