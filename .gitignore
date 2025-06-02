@@ -35,3 +35,4 @@ tutorial_ueberauth-*.tar
 npm-debug.log
 /assets/node_modules/
 
+.env
