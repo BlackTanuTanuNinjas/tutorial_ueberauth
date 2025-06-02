@@ -17,6 +17,16 @@ defmodule TutorialUeberauthWeb.Router do
     plug :accepts, ["json"]
   end
 
+  # Überauth のスコープを追加
+  scope "/auth", TutorialUeberauthWeb do
+    pipe_through :browser
+
+    get "/:provider", AuthController, :request
+    get "/:provider/callback", AuthController, :callback
+    post "/:provider/callback", AuthController, :callback
+    delete "/logout", AuthController, :delete
+  end
+
   scope "/", TutorialUeberauthWeb do
     pipe_through :browser
 
